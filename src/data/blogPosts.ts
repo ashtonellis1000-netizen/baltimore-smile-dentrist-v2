@@ -12,314 +12,132 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
-    id: "sustainable-architecture-future",
-    title: "The Future of Sustainable Architecture",
-    excerpt: "Exploring how modern architectural practices are evolving to meet environmental challenges while maintaining design excellence.",
+    id: "cerec-same-day-crowns",
+    title: "CEREC Same-Day Crowns: What You Need to Know",
+    excerpt: "Learn how our advanced CAD/CAM technology allows us to create and place beautiful, precise crowns in a single visit.",
     content: `
-# The Future of Sustainable Architecture
+# CEREC Same-Day Crowns: What You Need to Know
 
-The architectural landscape is undergoing a profound transformation as we face the urgent need to address climate change and environmental degradation. Sustainable architecture is no longer a niche consideration—it has become the cornerstone of responsible design practice.
+Gone are the days of multiple appointments and temporary crowns. With CEREC (Chairside Economical Restoration of Esthetic Ceramics) technology, we can design, create, and place a permanent ceramic crown in just one visit.
 
-## Defining Sustainable Architecture
+## How It Works
 
-Sustainable architecture encompasses more than just energy efficiency. It represents a holistic approach to building design that considers the entire lifecycle of a structure, from material sourcing to end-of-life disposal. This philosophy integrates environmental, social, and economic factors to create buildings that not only minimize their ecological footprint but also enhance the quality of life for their occupants.
+### Digital Impressions
+Instead of messy putty impressions, we use a small camera to take a digital scan of your tooth. This creates an incredibly accurate 3D model.
 
-## Key Principles of Sustainable Design
+### Computer-Aided Design
+Using specialized software, your dentist designs your new crown right on a computer screen, ensuring perfect fit and natural appearance.
 
-### Material Selection
-The choice of building materials plays a crucial role in sustainable architecture. Architects are increasingly turning to:
-- Recycled and upcycled materials
-- Locally sourced materials to reduce transportation emissions
-- Bio-based materials like bamboo, cork, and mycelium
-- Materials with low embodied energy
+### In-Office Milling
+The design is sent to our in-office milling machine, which carves your crown from a solid block of high-quality ceramic material in about 15 minutes.
 
-### Energy Efficiency
-Modern sustainable buildings incorporate:
-- Passive solar design principles
-- High-performance insulation systems
-- Smart building technologies
-- Renewable energy integration
-- Natural ventilation strategies
+## Benefits of CEREC Crowns
 
-### Water Management
-Sustainable architecture addresses water conservation through:
-- Rainwater harvesting systems
-- Greywater recycling
-- Permeable landscaping
-- Low-flow fixtures and appliances
+- **Single visit** — no temporary crown or second appointment
+- **Digital precision** — superior fit compared to traditional methods
+- **Natural appearance** — tooth-colored ceramic that blends seamlessly
+- **Durable** — high-quality materials built to last
+- **Conservative** — preserves more natural tooth structure
 
-## Emerging Trends
+## Is CEREC Right for You?
 
-The future of sustainable architecture is being shaped by several emerging trends:
-
-### Biophilic Design
-The integration of natural elements into built environments is gaining momentum. This approach recognizes the innate human connection to nature and seeks to incorporate natural light, ventilation, vegetation, and organic forms into architectural design.
-
-### Circular Economy Principles
-Architects are beginning to design for disassembly, creating buildings that can be easily deconstructed and their materials reused in new projects. This approach challenges the traditional linear model of construction and waste.
-
-### Carbon-Neutral and Carbon-Negative Buildings
-The next generation of sustainable buildings aims not just to minimize carbon emissions but to actively remove carbon from the atmosphere through innovative design and material choices.
-
-## Challenges and Opportunities
-
-While the path toward sustainable architecture presents challenges—including higher upfront costs, regulatory barriers, and the need for specialized knowledge—it also offers tremendous opportunities. These include reduced operational costs, improved occupant health and productivity, and the potential to create resilient communities that can adapt to changing environmental conditions.
-
-## Conclusion
-
-The future of architecture lies in our ability to create buildings that work in harmony with natural systems. As architects, we have the responsibility and the opportunity to design a built environment that supports both human well-being and planetary health. The transition to sustainable architecture is not just an environmental imperative—it is a creative challenge that will define the next era of architectural innovation.
+CEREC crowns are ideal for most situations requiring a crown, including damaged teeth, large fillings that need replacement, and cosmetic improvements. Schedule a consultation to find out if CEREC is right for your needs.
     `,
-    author: "Sarah Chen",
-    date: "2024-03-15",
-    readTime: "8 min read",
-    category: "SUSTAINABILITY",
-    image: "/src/assets/blog-sustainable-architecture.jpg"
+    author: "Dr. Barton",
+    date: "2024-11-15",
+    readTime: "4 min read",
+    category: "TECHNOLOGY",
+    image: "/src/assets/hero-dental.jpg"
   },
   {
-    id: "minimalism-modern-living",
-    title: "Minimalism in Modern Living Spaces",
-    excerpt: "How the principles of minimalist design are reshaping contemporary residential architecture and interior spaces.",
+    id: "sleep-apnea-dental-treatment",
+    title: "Sleep Apnea Treatment Without CPAP",
+    excerpt: "Custom dental appliances offer an effective alternative to CPAP machines for treating snoring and obstructive sleep apnea.",
     content: `
-# Minimalism in Modern Living Spaces
+# Sleep Apnea Treatment Without CPAP
 
-In an era of overwhelming digital noise and material excess, minimalist architecture offers a sanctuary of calm and clarity. This design philosophy, rooted in the Japanese concept of "ma" (negative space) and Scandinavian functionality, has evolved into a defining characteristic of contemporary residential design.
+Obstructive sleep apnea affects millions of Americans, and while CPAP machines are effective, many patients find them uncomfortable. Our practice offers FDA-approved dental appliance therapy as an alternative.
 
-## The Philosophy Behind Minimalism
+## Understanding Sleep Apnea
 
-Minimalist architecture is not about creating empty or stark spaces—it's about intentional design choices that prioritize function, beauty, and the essential elements of living. The approach emphasizes:
+Sleep apnea occurs when the airway becomes partially or fully blocked during sleep, causing interrupted breathing patterns. Symptoms include loud snoring, daytime fatigue, morning headaches, and difficulty concentrating.
 
-- **Simplicity over complexity**
-- **Quality over quantity**
-- **Space over stuff**
-- **Light over ornament**
+## Dental Appliance Therapy
 
-## Core Elements of Minimalist Design
+### How It Works
+A custom-made, custom-fitted oral appliance is worn during sleep. It repositions the lower jaw and tongue to keep the airway open, preventing the collapse that causes apnea events.
 
-### Clean Lines and Geometric Forms
-Minimalist architecture favors simple geometric shapes and clean lines. This creates a sense of order and tranquility that serves as a backdrop for daily life. The absence of decorative elements allows the architecture itself to become the focal point.
+### Our Process
+- Written screening questionnaire
+- Sleep-record appointment with take-home diagnostic device
+- Data download and analysis
+- Sleep physician diagnosis
+- Custom dental appliance fabrication and fitting
 
-### Natural Materials
-The minimalist palette typically includes:
-- Raw concrete
-- Natural wood
-- Steel and glass
-- Stone and marble
-- Neutral textiles
+## Benefits Over CPAP
 
-These materials are chosen for their inherent beauty and authenticity, often displayed in their natural state without excessive finishing or treatment.
+- **Comfortable** — small, lightweight, and easy to wear
+- **Portable** — perfect for travel
+- **Silent** — no machine noise
+- **No electricity needed**
+- **Easy to maintain**
 
-### Strategic Use of Light
-Natural light becomes a design element in minimalist spaces. Large windows, skylights, and glass walls not only illuminate the interior but create a connection with the outdoors. The interplay of light and shadow throughout the day adds depth and interest to otherwise simple surfaces.
+## Is It Right for You?
 
-### Functional Furniture and Built-ins
-Every piece serves a purpose in minimalist design. Furniture is often built-in or carefully selected for both function and aesthetic value. Storage solutions are integrated seamlessly into the architecture, maintaining the clean lines while providing necessary functionality.
-
-## The Psychology of Minimalist Living
-
-Research in environmental psychology suggests that minimalist spaces can have profound effects on mental well-being:
-
-### Reduced Stress and Anxiety
-Clutter-free environments have been shown to reduce cortisol levels and promote feelings of calm and control.
-
-### Enhanced Focus and Productivity
-With fewer visual distractions, occupants often report improved concentration and mental clarity.
-
-### Greater Appreciation for Quality
-When surrounded by fewer but higher-quality items, people tend to develop a deeper appreciation for craftsmanship and design.
-
-## Challenges and Considerations
-
-### Storage Solutions
-One of the biggest challenges in minimalist design is providing adequate storage while maintaining clean aesthetics. This requires creative solutions such as:
-- Hidden storage compartments
-- Multi-functional furniture
-- Dedicated storage rooms or areas
-
-### Personalization
-Creating minimalist spaces that feel warm and personal requires careful curation of meaningful objects and artwork.
-
-### Maintenance
-Minimalist spaces can show wear and dirt more easily, requiring consistent maintenance to preserve their pristine appearance.
-
-## Minimalism and Sustainability
-
-The minimalist approach aligns naturally with sustainable design principles:
-- **Reduced material consumption**
-- **Focus on durability over trends**
-- **Energy efficiency through passive design**
-- **Long-term thinking over short-term aesthetics**
-
-## Conclusion
-
-Minimalism in modern living spaces represents more than just an aesthetic choice—it's a lifestyle philosophy that prioritizes intention, quality, and well-being. As our lives become increasingly complex, the simplicity and clarity of minimalist design offer a path toward more meaningful and sustainable ways of living.
-
-The challenge for architects and designers is to create minimalist spaces that feel alive and welcoming rather than cold or sterile. When executed thoughtfully, minimalist design can provide the perfect canvas for life's most important moments.
+Dental appliance therapy is particularly effective for mild to moderate obstructive sleep apnea and can also be used in conjunction with CPAP for severe cases. As members of the American Academy of Dental Sleep Medicine, we're qualified to evaluate your needs.
     `,
-    author: "Marcus Rodriguez",
-    date: "2024-03-10",
-    readTime: "6 min read",
-    category: "DESIGN",
-    image: "/src/assets/blog-minimalist-living.jpg"
+    author: "Dr. Murphy",
+    date: "2024-10-20",
+    readTime: "5 min read",
+    category: "HEALTH",
+    image: "/src/assets/hero-dental.jpg"
   },
   {
-    id: "urban-planning-community-spaces",
-    title: "Urban Planning and Community Spaces",
-    excerpt: "Examining the role of thoughtful urban planning in creating vibrant, inclusive communities through architectural design.",
+    id: "clear-aligners-options",
+    title: "Clear Aligners: Your Options for a Straighter Smile",
+    excerpt: "Comparing Invisalign, SureSmile, and Six Month Smiles — find the right clear aligner treatment for your needs.",
     content: `
-# Urban Planning and Community Spaces
+# Clear Aligners: Your Options for a Straighter Smile
 
-The fabric of our cities is woven through the careful orchestration of public and private spaces, each contributing to the complex ecosystem of urban life. As populations continue to urbanize, the role of thoughtful urban planning and community-centered architectural design becomes increasingly critical in shaping livable, sustainable, and equitable cities.
+Clear aligner therapy has revolutionized orthodontic treatment, offering a discreet alternative to traditional braces. At our practice, we offer multiple clear aligner systems to match your specific needs.
 
-## The Evolution of Urban Planning
+## Invisalign
 
-Urban planning has evolved from purely functional considerations—managing traffic flow, utilities, and zoning—to encompass broader goals of social equity, environmental sustainability, and community well-being. This shift recognizes that cities are not just collections of buildings and infrastructure, but complex social organisms that require careful nurturing.
+The most well-known clear aligner system. Custom-made, removable trays gradually shift your teeth into the desired position.
 
-### From Zoning to Place-Making
+### Best For
+- Complex cases requiring significant tooth movement
+- Patients wanting the most established system
+- Full-mouth alignment
 
-Traditional zoning practices often created segregated, single-use districts that required extensive commuting and limited social interaction. Contemporary urban planning embraces mixed-use development and place-making strategies that:
+## SureSmile
 
-- **Encourage walkability and cycling**
-- **Mix residential, commercial, and office spaces**
-- **Create destinations rather than just developments**
-- **Foster chance encounters and community building**
+An advanced aligner system using 3D imaging and digital treatment planning for precise results.
 
-## The Architecture of Community
+### Best For
+- Patients seeking digital precision
+- Moderate alignment cases
+- Combination with other dental treatments
 
-Community spaces serve as the living rooms of our cities—places where strangers become neighbors, where cultural exchange happens naturally, and where the social fabric of urban life is strengthened.
+## Six Month Smiles
 
-### Public Squares and Plazas
-Well-designed public squares act as outdoor rooms that can accommodate a variety of activities:
-- **Markets and festivals**
-- **Informal gatherings and people-watching**
-- **Children's play and elderly socialization**
-- **Political demonstrations and civic engagement**
+Short-term orthodontic treatment focusing on the visible front teeth using clear brackets and tooth-colored wires.
 
-### Community Centers and Libraries
-Modern community centers are evolving beyond their traditional roles to become:
-- **Flexible spaces that adapt to different needs**
-- **Technology hubs providing digital access**
-- **Venues for lifelong learning and skill development**
-- **Safe havens during emergencies or extreme weather**
+### Best For
+- Mild to moderate cosmetic cases
+- Patients wanting faster results
+- Focus on front teeth alignment
 
-### Parks and Green Spaces
-Urban parks provide essential ecosystem services while creating opportunities for recreation, contemplation, and community gathering. Effective park design considers:
-- **Diverse programming for different age groups**
-- **Seasonal activities and year-round usability**
-- **Biodiversity and habitat creation**
-- **Stormwater management and climate resilience**
+## Making Your Choice
 
-## Principles of Inclusive Design
+During your consultation, our doctors will evaluate your specific needs and recommend the best option. Factors include the complexity of your case, treatment timeline, budget, and personal preferences.
 
-Creating truly community-centered spaces requires attention to inclusivity and accessibility:
-
-### Universal Design
-Spaces should be usable by people of all abilities, ages, and backgrounds. This includes:
-- **Physical accessibility through ramps, elevators, and clear sightlines**
-- **Sensory considerations for those with hearing or visual impairments**
-- **Cultural sensitivity in programming and design**
-- **Economic accessibility through free or low-cost activities**
-
-### Safety and Comfort
-Community spaces must feel safe and welcoming to all users:
-- **Good lighting and clear sightlines**
-- **Natural surveillance through strategic positioning**
-- **Comfortable seating and weather protection**
-- **Clean and well-maintained facilities**
-
-## The Role of Participation
-
-Successful community spaces are designed with, not just for, the people who will use them. Participatory design processes involve:
-
-### Community Engagement
-- **Public meetings and design charrettes**
-- **Surveys and focus groups with diverse stakeholders**
-- **Pop-up installations to test design ideas**
-- **Ongoing feedback and adaptation**
-
-### Cultural Responsiveness
-Understanding the specific cultural context of a community is essential:
-- **Recognizing existing social patterns and traditions**
-- **Incorporating local materials and architectural vernacular**
-- **Supporting local businesses and economies**
-- **Celebrating cultural diversity through programming and design**
-
-## Technology and Smart Cities
-
-The integration of technology into urban planning offers new opportunities for community building:
-
-### Digital Infrastructure
-- **Free Wi-Fi in public spaces**
-- **Digital wayfinding and information systems**
-- **Online platforms for community organizing**
-- **Data collection for continuous improvement**
-
-### Responsive Design
-Smart city technologies can make spaces more adaptive to community needs:
-- **Lighting that responds to usage patterns**
-- **Flexible infrastructure for different events**
-- **Real-time feedback systems**
-- **Environmental monitoring for health and comfort**
-
-## Challenges and Opportunities
-
-### Gentrification and Displacement
-Well-designed community spaces can inadvertently contribute to gentrification. Planners must consider:
-- **Affordable housing preservation**
-- **Local business protection**
-- **Community ownership models**
-- **Equitable development strategies**
-
-### Climate Change Adaptation
-Urban planning must increasingly consider climate resilience:
-- **Heat island effect mitigation**
-- **Flood management and permeable surfaces**
-- **Emergency shelter and evacuation routes**
-- **Food security and urban agriculture**
-
-## Case Studies in Success
-
-### Copenhagen's Public Spaces
-Copenhagen has transformed itself into one of the world's most livable cities through strategic investment in:
-- **Extensive cycling infrastructure**
-- **Year-round public space programming**
-- **Climate-adapted design for Nordic conditions**
-- **Strong public-private partnerships**
-
-### Medellín's Urban Acupuncture
-Medellín, Colombia, has used targeted architectural interventions to transform neighborhoods:
-- **Library parks in underserved areas**
-- **Cable car systems connecting hillside communities**
-- **Green corridors along waterways**
-- **Community-led improvement projects**
-
-## The Future of Community-Centered Design
-
-As we look toward the future, several trends are shaping community-centered urban design:
-
-### Tactical Urbanism
-Temporary, low-cost interventions that test ideas before permanent implementation:
-- **Pop-up parks and parklets**
-- **Temporary bike lanes**
-- **Street art and murals**
-- **Community gardens**
-
-### Intergenerational Design
-Spaces that bring together people of all ages:
-- **Playgrounds adjacent to senior seating**
-- **Community workshops and maker spaces**
-- **Intergenerational housing models**
-- **Shared learning environments**
-
-## Conclusion
-
-The future of our cities depends on our ability to create spaces that strengthen community bonds while addressing the challenges of urbanization, climate change, and social inequality. Through thoughtful urban planning and community-centered architectural design, we can build cities that are not just efficient and sustainable, but truly livable for all their inhabitants.
-
-The most successful community spaces are those that grow and evolve with their users, adapting to changing needs while maintaining their essential character as places of gathering, exchange, and belonging. As architects and planners, our role is to provide the physical framework for community life while remaining flexible enough to support the unexpected ways that people will inhabit and transform these spaces.
+Schedule your consultation today to discover which clear aligner system is right for you.
     `,
-    author: "Elena Nakamura",
-    date: "2024-03-05",
-    readTime: "10 min read",
-    category: "URBAN PLANNING",
-    image: "/src/assets/blog-urban-planning.jpg"
+    author: "Dr. Esquilín",
+    date: "2024-09-08",
+    readTime: "4 min read",
+    category: "COSMETIC",
+    image: "/src/assets/hero-dental.jpg"
   }
 ];

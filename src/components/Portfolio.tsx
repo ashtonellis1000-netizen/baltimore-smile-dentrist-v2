@@ -1,68 +1,61 @@
-import project1 from "@/assets/project-1.jpg";
-import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg";
+import doctorBarton from "@/assets/doctor-barton.jpg";
+import doctorWelzel from "@/assets/doctor-welzel.jpg";
+import doctorEsquilin from "@/assets/doctor-esquilin.jpg";
+import doctorMurphy from "@/assets/doctor-murphy.jpg";
+
+const doctors = [
+  {
+    image: doctorBarton,
+    name: "Dr. M. Alexander Barton, D.M.D.",
+    title: "Lead Doctor",
+    bio: "Baltimore native with a B.S. in Public Health from GWU. Trained at University of New England and certified in cosmetic procedures through the American Academy of Facial Aesthetics."
+  },
+  {
+    image: doctorWelzel,
+    name: "Dr. Alexandra Welzel, DDS, FAGD",
+    title: "Cosmetic Specialist",
+    bio: "Over 30 years of experience. Fellow of the Academy of General Dentistry (FAGD). Specializes in clear aligners, veneers, whitening, and more."
+  },
+  {
+    image: doctorEsquilin,
+    name: "Dr. Nicole Esquilín",
+    title: "General Dentist",
+    bio: "Bilingual care in English and Spanish. Certified in Invisalign and SureSmile. Trained in restorative, prosthetic, and endodontic treatment."
+  },
+  {
+    image: doctorMurphy,
+    name: "K. Michael Murphy, DDS, MS",
+    title: "Prosthodontist",
+    bio: "Voted 'Best Prosthodontist' and 'Best Dentist' in Baltimore. Practices at the leading edge of digital cosmetic, complex restorative and implant dentistry."
+  },
+];
 
 const Portfolio = () => {
-  const projects = [
-    {
-      image: project1,
-      title: "MINIMAL RESIDENCE",
-      location: "NEW YORK, 2024",
-      description: "A contemporary home focusing on light, space, and material honesty"
-    },
-    {
-      image: project2,
-      title: "CORPORATE HEADQUARTERS",
-      location: "LONDON, 2023",
-      description: "Modern office space emphasizing collaboration and natural elements"
-    },
-    {
-      image: project3,
-      title: "CULTURAL CENTER",
-      location: "TOKYO, 2023",
-      description: "Public architecture that bridges tradition with contemporary design"
-    }
-  ];
-
   return (
-    <section id="work" className="py-32 bg-muted">
+    <section id="doctors" className="py-24 bg-muted/30">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="mb-20">
-            <h2 className="text-minimal text-muted-foreground mb-4">SELECTED WORK</h2>
-            <h3 className="text-4xl md:text-6xl font-light text-architectural">
-              Our Projects
+          <div className="mb-16">
+            <h2 className="text-minimal text-primary mb-4">OUR DOCTORS</h2>
+            <h3 className="text-4xl md:text-5xl font-light text-architectural">
+              Meet the Team
             </h3>
           </div>
           
-          <div className="space-y-32">
-            {projects.map((project, index) => (
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {doctors.map((doc, index) => (
               <div key={index} className="group">
-                <div className="relative overflow-hidden">
+                <div className="relative overflow-hidden rounded-xl mb-5">
                   <img 
-                    src={project.image} 
-                    alt={project.title}
-                    className="w-full h-[70vh] object-cover transition-transform duration-700 group-hover:scale-105"
+                    src={doc.image} 
+                    alt={doc.name}
+                    className="w-full aspect-[3/4] object-cover transition-transform duration-700 group-hover:scale-105"
+                    loading="lazy"
                   />
-                  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 </div>
-                
-                <div className="mt-8 grid md:grid-cols-3 gap-8">
-                  <div>
-                    <h4 className="text-2xl font-light text-architectural mb-2">
-                      {project.title}
-                    </h4>
-                    <p className="text-minimal text-muted-foreground">
-                      {project.location}
-                    </p>
-                  </div>
-                  
-                  <div className="md:col-span-2">
-                    <p className="text-muted-foreground leading-relaxed">
-                      {project.description}
-                    </p>
-                  </div>
-                </div>
+                <h4 className="text-lg font-medium text-architectural mb-1">{doc.name}</h4>
+                <p className="text-minimal text-primary mb-3">{doc.title}</p>
+                <p className="text-muted-foreground text-sm leading-relaxed">{doc.bio}</p>
               </div>
             ))}
           </div>
