@@ -2,110 +2,103 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Minimal Architecture Design System - Black & White Excellence */
+/* Baltimore Uptown Dentist — Clean Medical Design System */
 
 @layer base {
   :root {
-    /* Pure Architecture Palette */
-    --background: 0 0% 100%;
-    --foreground: 0 0% 0%;
+    /* Clean Dental Palette — Trust Blue */
+    --background: 210 40% 98%;
+    --foreground: 210 40% 10%;
     
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 0%;
+    --card-foreground: 210 40% 10%;
     
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 0%;
+    --popover-foreground: 210 40% 10%;
     
-    /* Primary: Pure Black */
-    --primary: 0 0% 0%;
+    /* Primary: Medical Blue */
+    --primary: 205 78% 38%;
     --primary-foreground: 0 0% 100%;
     
-    /* Secondary: Pure White */
-    --secondary: 0 0% 100%;
-    --secondary-foreground: 0 0% 0%;
+    /* Secondary: Warm Sand */
+    --secondary: 38 30% 95%;
+    --secondary-foreground: 210 40% 10%;
     
-    /* Muted: Subtle Gray */
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 20%;
+    /* Muted */
+    --muted: 210 20% 95%;
+    --muted-foreground: 210 15% 40%;
     
-    /* Accent: Elegant Gray */
-    --accent: 0 0% 95%;
-    --accent-foreground: 0 0% 0%;
+    /* Accent: Teal */
+    --accent: 180 35% 92%;
+    --accent-foreground: 205 78% 30%;
     
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
     
-    --border: 0 0% 90%;
-    --input: 0 0% 95%;
-    --ring: 0 0% 0%;
+    --border: 210 20% 88%;
+    --input: 210 20% 93%;
+    --ring: 205 78% 38%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 210 30% 97%;
+    --sidebar-foreground: 210 15% 30%;
+    --sidebar-primary: 205 78% 38%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 20% 94%;
+    --sidebar-accent-foreground: 210 15% 30%;
+    --sidebar-border: 210 20% 90%;
+    --sidebar-ring: 205 78% 38%;
     
-    /* Architecture Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(0 0% 0% / 0.8), hsl(0 0% 0% / 0.4));
-    --gradient-overlay: linear-gradient(180deg, hsl(0 0% 0% / 0.9), hsl(0 0% 0% / 0.1));
+    /* Custom Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(205 78% 25% / 0.85), hsl(205 78% 38% / 0.5));
+    --gradient-overlay: linear-gradient(180deg, hsl(205 78% 20% / 0.7), hsl(205 78% 20% / 0.3));
     
-    /* Elegant Shadows */
-    --shadow-architectural: 0 25px 50px -12px hsl(0 0% 0% / 0.25);
-    --shadow-elegant: 0 10px 30px -10px hsl(0 0% 0% / 0.15);
+    /* Shadows */
+    --shadow-architectural: 0 25px 50px -12px hsl(205 78% 38% / 0.15);
+    --shadow-elegant: 0 10px 30px -10px hsl(205 78% 38% / 0.1);
     
-    /* Smooth Transitions */
+    /* Transitions */
     --transition-smooth: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
     --transition-fast: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
   .dark {
-    --background: 0 0% 0%;
-    --foreground: 0 0% 100%;
+    --background: 210 30% 8%;
+    --foreground: 210 20% 95%;
     
-    --card: 0 0% 5%;
-    --card-foreground: 0 0% 100%;
+    --card: 210 30% 12%;
+    --card-foreground: 210 20% 95%;
     
-    --popover: 0 0% 5%;
-    --popover-foreground: 0 0% 100%;
+    --popover: 210 30% 12%;
+    --popover-foreground: 210 20% 95%;
     
-    --primary: 0 0% 100%;
-    --primary-foreground: 0 0% 0%;
+    --primary: 205 70% 55%;
+    --primary-foreground: 0 0% 100%;
     
-    --secondary: 0 0% 10%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 210 20% 15%;
+    --secondary-foreground: 210 20% 95%;
     
-    --muted: 0 0% 10%;
-    --muted-foreground: 0 0% 60%;
+    --muted: 210 20% 15%;
+    --muted-foreground: 210 15% 60%;
     
-    --accent: 0 0% 15%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 205 30% 18%;
+    --accent-foreground: 205 70% 65%;
     
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
     
-    --border: 0 0% 15%;
-    --input: 0 0% 10%;
-    --ring: 0 0% 100%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --border: 210 20% 18%;
+    --input: 210 20% 15%;
+    --ring: 205 70% 55%;
+    --sidebar-background: 210 30% 10%;
+    --sidebar-foreground: 210 20% 90%;
+    --sidebar-primary: 205 70% 55%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 210 20% 16%;
+    --sidebar-accent-foreground: 210 20% 90%;
+    --sidebar-border: 210 20% 18%;
+    --sidebar-ring: 205 70% 55%;
   }
 }
 
@@ -118,9 +111,9 @@
     @apply bg-background text-foreground font-sans antialiased;
   }
   
-  /* Architectural Typography */
+  /* Clean Typography */
   .text-architectural {
-    @apply tracking-[-0.02em] leading-[1.1];
+    @apply tracking-[-0.01em] leading-[1.15];
   }
   
   .text-minimal {
