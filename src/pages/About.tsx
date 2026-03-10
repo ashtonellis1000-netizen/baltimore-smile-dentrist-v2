@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { ABOUT, AFFILIATIONS, PRACTICE } from "@/config/practice";
 
 const About = () => {
   return (
@@ -14,49 +15,41 @@ const About = () => {
                 <h2 className="text-4xl md:text-5xl font-light text-architectural mb-10">
                   Our Mission
                 </h2>
-                
+
                 <div className="space-y-6">
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    Chesapeake Dental Group is committed to providing the highest quality oral 
-                    health care. We've created an environment where everyone is treated with 
-                    dignity and nurtured, using the latest technology in a gentle, caring, 
-                    and friendly manner.
-                  </p>
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    Located in the Cambridge Apartments in Roland Park, across the street 
-                    from Johns Hopkins Homewood Campus near University Avenue, our office 
-                    provides convenient access to free parking.
-                  </p>
+                  {ABOUT.paragraphs.map((p, i) => (
+                    <p key={i} className="text-lg text-muted-foreground leading-relaxed">{p}</p>
+                  ))}
                 </div>
               </div>
-              
+
               <div className="space-y-10">
                 <div>
-                  <h3 className="text-minimal text-primary mb-6">OUR TEAM</h3>
+                  <h3 className="text-minimal text-primary mb-6">YOUR FIRST VISIT</h3>
                   <div className="space-y-4">
-                    <div className="border-l-2 border-primary pl-6">
-                      <h4 className="text-base font-medium mb-1">4 Experienced Doctors</h4>
-                      <p className="text-muted-foreground text-sm">Led by Dr. M. Alex Barton, D.M.D.</p>
-                    </div>
-                    <div className="border-l-2 border-primary pl-6">
-                      <h4 className="text-base font-medium mb-1">Dedicated Hygienists</h4>
-                      <p className="text-muted-foreground text-sm">Decades of combined experience in dental care</p>
-                    </div>
-                    <div className="border-l-2 border-primary pl-6">
-                      <h4 className="text-base font-medium mb-1">Skilled Support Staff</h4>
-                      <p className="text-muted-foreground text-sm">Friendly administrative team and dental assistants</p>
-                    </div>
+                    {ABOUT.firstVisit.map((item, i) => (
+                      <div key={i} className="border-l-2 border-primary pl-6">
+                        <h4 className="text-base font-medium mb-1">{item.title}</h4>
+                        <p className="text-muted-foreground text-sm">{item.desc}</p>
+                      </div>
+                    ))}
                   </div>
                 </div>
-                
+
                 <div>
                   <h3 className="text-minimal text-primary mb-6">AFFILIATIONS</h3>
                   <div className="flex flex-wrap gap-3 text-sm text-muted-foreground">
-                    {["ADA", "Maryland State Dental Assoc.", "AADSM", "ICOI", "ACP", "AGD"].map(a => (
+                    {AFFILIATIONS.map(a => (
                       <span key={a} className="px-3 py-1 rounded-full border border-border">{a}</span>
                     ))}
                   </div>
                 </div>
+
+                {PRACTICE.formerly && (
+                  <div className="pt-6 border-t border-border">
+                    <p className="text-sm text-muted-foreground italic">Formerly known as {PRACTICE.formerly}</p>
+                  </div>
+                )}
               </div>
             </div>
           </div>

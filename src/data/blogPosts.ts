@@ -47,7 +47,7 @@ CEREC crowns are ideal for most situations requiring a crown, including damaged 
     date: "2024-11-15",
     readTime: "4 min read",
     category: "TECHNOLOGY",
-    image: "/src/assets/hero-dental.jpg"
+    image: "/hero-dental.jpg"
   },
   {
     id: "sleep-apnea-dental-treatment",
@@ -90,7 +90,7 @@ Dental appliance therapy is particularly effective for mild to moderate obstruct
     date: "2024-10-20",
     readTime: "5 min read",
     category: "HEALTH",
-    image: "/src/assets/hero-dental.jpg"
+    image: "/hero-dental.jpg"
   },
   {
     id: "clear-aligners-options",
@@ -138,6 +138,6 @@ Schedule your consultation today to discover which clear aligner system is right
     date: "2024-09-08",
     readTime: "4 min read",
     category: "COSMETIC",
-    image: "/src/assets/hero-dental.jpg"
+    image: "/hero-dental.jpg"
   }
 ];

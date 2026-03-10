@@ -1,34 +1,8 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { SERVICE_GROUPS, CONTACT } from "@/config/practice";
 
 const Services = () => {
-  const serviceGroups = [
-    {
-      category: "TECHNOLOGY",
-      items: [
-        { title: "CEREC CAD/CAM Crowns", desc: "Same-day crowns with advanced computer-aided design and manufacturing" },
-        { title: "3D ConeBeam CAT Scans", desc: "Comprehensive 3D imaging for precise diagnosis and treatment planning" },
-        { title: "Computer Guided Implant Surgery", desc: "Precision-guided placement for optimal implant results" },
-        { title: "Growth Factor Bio-Technology", desc: "Advanced healing technology using your body's natural growth factors" },
-        { title: "Microscopes in Periodontal Treatment", desc: "Superior magnification for precision dentistry" },
-        { title: "Botox and Fillers", desc: "Cosmetic facial procedures by certified professionals" },
-      ]
-    },
-    {
-      category: "DENTAL SERVICES",
-      items: [
-        { title: "Cosmetic Dentistry", desc: "Veneers, bonding, contouring, and smile makeovers" },
-        { title: "Dental Implants", desc: "Permanent tooth replacement with computer-guided precision" },
-        { title: "Crowns and Bridges", desc: "Durable restorations to rebuild your smile" },
-        { title: "Clear Aligners", desc: "Invisalign, SureSmile, and Six Month Smiles options" },
-        { title: "Root Canal Therapy", desc: "Gentle endodontic treatment to save damaged teeth" },
-        { title: "Whitening", desc: "Professional teeth whitening for a brighter smile" },
-        { title: "Dentures", desc: "Full and partial dentures custom-fitted for comfort" },
-        { title: "Sleep Apnea Treatment", desc: "Custom oral appliances as an alternative to CPAP" },
-      ]
-    }
-  ];
-
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -37,14 +11,14 @@ const Services = () => {
           <div className="max-w-7xl mx-auto">
             <h1 className="text-5xl md:text-7xl font-light text-architectural mb-6">OUR SERVICES</h1>
             <p className="text-xl text-muted-foreground max-w-3xl">
-              From routine care to advanced restorative and cosmetic treatments, 
+              From routine care to advanced restorative and cosmetic treatments,
               we offer comprehensive dentistry using the latest technology.
             </p>
           </div>
         </div>
       </section>
 
-      {serviceGroups.map((group) => (
+      {SERVICE_GROUPS.map((group) => (
         <section key={group.category} className="pb-20">
           <div className="container mx-auto px-6">
             <div className="max-w-7xl mx-auto">
@@ -68,8 +42,8 @@ const Services = () => {
           <p className="text-primary-foreground/80 mb-8 max-w-xl mx-auto">
             Call us today or stop by our Roland Park office.
           </p>
-          <a href="tel:+14102351233" className="inline-block px-8 py-4 bg-background text-foreground rounded-lg hover:bg-background/90 transition-colors font-medium">
-            Call (410) 235-1233
+          <a href={CONTACT.phoneHref} className="inline-block px-8 py-4 bg-background text-foreground rounded-lg hover:bg-background/90 transition-colors font-medium">
+            Call {CONTACT.phone}
           </a>
         </div>
       </section>

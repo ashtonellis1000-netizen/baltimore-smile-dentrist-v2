@@ -1,3 +1,5 @@
+import { ABOUT, AFFILIATIONS, PRACTICE, CONTACT } from "@/config/practice";
+
 const About = () => {
   return (
     <section id="about" className="py-24 bg-muted/30">
@@ -7,42 +9,29 @@ const About = () => {
             <div>
               <h2 className="text-minimal text-primary mb-4">ABOUT OUR PRACTICE</h2>
               <h3 className="text-4xl md:text-5xl font-light text-architectural mb-10">
-                Healthy Mouth, Heart & Mind
+                {ABOUT.missionHeadline}
               </h3>
-              
+
               <div className="space-y-6">
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Chesapeake Dental Group (formerly Dr. K Michael Murphy & Associates) is committed 
-                  to providing the highest quality oral health care in an environment where everyone 
-                  is treated with dignity and nurtured.
-                </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Nestled in the Cambridge Apartments in Roland Park, across from Johns Hopkins 
-                  Homewood Campus, our office uses the latest technology in a gentle, caring, 
-                  and friendly manner — with convenient access to free parking.
-                </p>
+                {ABOUT.paragraphs.map((p, i) => (
+                  <p key={i} className="text-lg text-muted-foreground leading-relaxed">{p}</p>
+                ))}
               </div>
             </div>
-            
+
             <div className="space-y-10">
               <div>
                 <h4 className="text-minimal text-primary mb-6">YOUR FIRST VISIT</h4>
                 <div className="space-y-4">
-                  <div className="border-l-2 border-primary pl-6">
-                    <h5 className="text-base font-medium mb-1">Medical & Dental History</h5>
-                    <p className="text-muted-foreground text-sm">Comprehensive review and necessary x-rays</p>
-                  </div>
-                  <div className="border-l-2 border-primary pl-6">
-                    <h5 className="text-base font-medium mb-1">Micro-Assay Analysis</h5>
-                    <p className="text-muted-foreground text-sm">Bacterial study using phase contrast microscope</p>
-                  </div>
-                  <div className="border-l-2 border-primary pl-6">
-                    <h5 className="text-base font-medium mb-1">Oral Cancer Exam</h5>
-                    <p className="text-muted-foreground text-sm">Full periodontal charting and treatment planning</p>
-                  </div>
+                  {ABOUT.firstVisit.map((item, i) => (
+                    <div key={i} className="border-l-2 border-primary pl-6">
+                      <h5 className="text-base font-medium mb-1">{item.title}</h5>
+                      <p className="text-muted-foreground text-sm">{item.desc}</p>
+                    </div>
+                  ))}
                 </div>
               </div>
-              
+
               <div className="pt-6 border-t border-border">
                 <div className="grid grid-cols-2 gap-6">
                   <div>
@@ -50,9 +39,18 @@ const About = () => {
                     <p className="text-lg">Dr. M. Alex Barton</p>
                   </div>
                   <div>
-                    <h4 className="text-minimal text-primary mb-2">ESTABLISHED</h4>
-                    <p className="text-lg">Roland Park, Baltimore</p>
+                    <h4 className="text-minimal text-primary mb-2">LOCATION</h4>
+                    <p className="text-lg">{PRACTICE.established}</p>
                   </div>
+                </div>
+              </div>
+
+              <div>
+                <h4 className="text-minimal text-primary mb-4">AFFILIATIONS</h4>
+                <div className="flex flex-wrap gap-3 text-sm text-muted-foreground">
+                  {AFFILIATIONS.map(a => (
+                    <span key={a} className="px-3 py-1 rounded-full border border-border">{a}</span>
+                  ))}
                 </div>
               </div>
             </div>

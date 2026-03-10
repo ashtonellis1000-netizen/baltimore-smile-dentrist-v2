@@ -3,6 +3,23 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { blogPosts } from "@/data/blogPosts";
 
+const renderContent = (content: string) => {
+  return content.split('\n').map((line, i) => {
+    if (line.startsWith('# ')) return <h1 key={i} className="text-2xl md:text-3xl font-light text-foreground mb-6 mt-10">{line.substring(2)}</h1>;
+    if (line.startsWith('## ')) return <h2 key={i} className="text-xl md:text-2xl font-light text-foreground mb-4 mt-8">{line.substring(3)}</h2>;
+    if (line.startsWith('### ')) return <h3 key={i} className="text-lg font-medium text-foreground mb-3 mt-6">{line.substring(4)}</h3>;
+    if (line.startsWith('- **')) {
+      const endBold = line.indexOf('**', 4);
+      const boldText = line.substring(4, endBold);
+      const rest = line.substring(endBold + 2);
+      return <li key={i} className="ml-6 mb-1"><strong className="text-foreground">{boldText}</strong>{rest}</li>;
+    }
+    if (line.startsWith('- ')) return <li key={i} className="ml-6 mb-1">{line.substring(2)}</li>;
+    if (line.trim() === '') return null;
+    return <p key={i} className="mb-3">{line}</p>;
+  });
+};
+
 const BlogPost = () => {
   const { id } = useParams<{ id: string }>();
   const post = blogPosts.find(p => p.id === id);
@@ -41,28 +58,8 @@ const BlogPost = () => {
               <p className="text-lg text-muted-foreground">{post.excerpt}</p>
             </div>
             
-            <div className="prose prose-lg max-w-none">
-              <div 
-                className="text-muted-foreground leading-relaxed space-y-4"
-                dangerouslySetInnerHTML={{ 
-                  __html: post.content
-                    .split('\n')
-                    .map(line => {
-                      if (line.startsWith('# ')) return `<h1 class="text-2xl md:text-3xl font-light text-foreground mb-6 mt-10">${line.substring(2)}</h1>`;
-                      if (line.startsWith('## ')) return `<h2 class="text-xl md:text-2xl font-light text-foreground mb-4 mt-8">${line.substring(3)}</h2>`;
-                      if (line.startsWith('### ')) return `<h3 class="text-lg font-medium text-foreground mb-3 mt-6">${line.substring(4)}</h3>`;
-                      if (line.startsWith('- **')) {
-                        const content = line.substring(4, line.lastIndexOf('**'));
-                        const rest = line.substring(line.lastIndexOf('**') + 2);
-                        return `<li class="ml-6 mb-1"><strong class="text-foreground">${content}</strong>${rest}</li>`;
-                      }
-                      if (line.startsWith('- ')) return `<li class="ml-6 mb-1">${line.substring(2)}</li>`;
-                      if (line.trim() === '') return '';
-                      return `<p class="mb-3">${line}</p>`;
-                    })
-                    .join('')
-                }}
-              />
+            <div className="text-muted-foreground leading-relaxed space-y-1">
+              {renderContent(post.content)}
             </div>
             
             <div className="mt-12 pt-6 border-t border-border">
