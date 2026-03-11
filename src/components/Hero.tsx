@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-dental.jpg";
 import { PRACTICE, CONTACT } from "@/config/practice";
 
@@ -62,12 +63,12 @@ const Hero = () => {
           >
             Call {CONTACT.phone}
           </a>
-          <a
-            href="/services"
+          <Link
+            to="/services"
             className="px-7 py-3.5 border border-white/30 text-white/90 rounded-lg hover:bg-white/10 transition-colors text-sm font-medium"
           >
             Our Services
-          </a>
+          </Link>
         </div>
       </div>
 
